@@ -179,13 +179,13 @@ This file is divided into 2 sections:
     </parameters>
     <customMessage>Too many spaces before try, catch, or finally left brace</customMessage>
   </check>
-
+<!--
   <check enabled="true" class="org.scalastyle.file.RegexChecker" level="warning">
     <parameters>
       <parameter name="regex">^[^"]*:[^\s-]|^[^"]*;[^\s-]|^[^"]*,[^\s-]</parameter>
     </parameters>
     <customMessage>Require space after comma, semicolon, and colon not in string</customMessage>
-  </check>
+  </check> -->
 
   <!-- need to check if this might cause false positives -->
   <check enabled="true" class="org.scalastyle.file.RegexChecker" level="warning">
@@ -245,7 +245,7 @@ This file is divided into 2 sections:
 
   <check level="warning" class="org.scalastyle.scalariform.MethodLengthChecker" enabled="true">
     <parameters>
-      <parameter name="maxLength"><![CDATA[50]]></parameter>
+      <parameter name="maxLength"><![CDATA[300]]></parameter>
     </parameters>
   </check>
 
@@ -334,12 +334,12 @@ This file is divided into 2 sections:
 
   <check level="warning" class="org.scalastyle.scalariform.LowercasePatternMatchChecker" enabled="true"></check>
 
-  <check level="warning" class="org.scalastyle.scalariform.MultipleStringLiteralsChecker" enabled="true">
+  <!-- <check level="warning" class="org.scalastyle.scalariform.MultipleStringLiteralsChecker" enabled="true">
     <parameters>
       <parameter name="allowed"><![CDATA[2]]></parameter>
       <parameter name="ignoreRegex"><![CDATA[^""$]]></parameter>
     </parameters>
-  </check>
+  </check> -->
 
   <check level="warning" class="org.scalastyle.scalariform.ImportGroupingChecker" enabled="true"></check>
 
